@@ -1,0 +1,6 @@
+# Serveur web + WebSocket temps réel
+fastapi>=0.110
+uvicorn[standard]>=0.27      # inclut 'websockets' pour le temps réel
+# Export des rapports PDF (optionnel : sans lui, seuls les exports CSV/JSON sont disponibles)
+reportlab>=4.0
+# Le moteur de simulation n'utilise que la bibliothèque standard Python (aucune dépendance).

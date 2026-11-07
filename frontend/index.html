@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QoS Lab — Simulateur de trafic multimédia IP</title>
+  <meta name="description" content="Simulation de flux voix, vidéo et data, mesure de la QoS et comparaison des politiques de file d'attente.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1426'/%3E%3Cpath d='M6 20c3-8 6-8 9 0s6 8 11-4' stroke='%2322d3ee' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"><path d="M3 15c2.5-7 5-7 7.5 0s5 7 10.5-5"/><circle cx="3" cy="15" r="1.4" fill="#22d3ee"/><circle cx="21" cy="10" r="1.4" fill="#a78bfa" stroke="#a78bfa"/></svg>
+        </div>
+        <div>
+          <div class="brand-name">QoS Lab</div>
+          <div class="brand-sub">IP Multimedia Sim</div>
+        </div>
+      </div>
+      <div class="nav-label">Supervision</div>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-status" id="side-status"></div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="btn icon ghost menu-btn" id="menu-btn" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div class="crumb"><small id="crumb-eyebrow">Network Control Center</small><strong id="crumb-title">Dashboard</strong></div>
+        <div class="live-controls" id="live-controls"></div>
+      </header>
+      <main class="view" id="view"></main>
+    </div>
+  </div>
+  <div class="toast-zone" id="toasts"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
